@@ -14,6 +14,8 @@
 		134E375529C253B80025F99C /* SuperSmashBrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E375429C253B80025F99C /* SuperSmashBrosTests.swift */; };
 		134E375F29C253B80025F99C /* SuperSmashBrosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E375E29C253B80025F99C /* SuperSmashBrosUITests.swift */; };
 		134E376129C253B80025F99C /* SuperSmashBrosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E376029C253B80025F99C /* SuperSmashBrosUITestsLaunchTests.swift */; };
+		134E376F29C253E60025F99C /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E376E29C253E60025F99C /* CharacterModel.swift */; };
+		134E377429C3991D0025F99C /* SuperSmashBrosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E377329C3991D0025F99C /* SuperSmashBrosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		134E375A29C253B80025F99C /* SuperSmashBrosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSmashBrosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		134E375E29C253B80025F99C /* SuperSmashBrosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSmashBrosUITests.swift; sourceTree = "<group>"; };
 		134E376029C253B80025F99C /* SuperSmashBrosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSmashBrosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		134E376E29C253E60025F99C /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		134E377329C3991D0025F99C /* SuperSmashBrosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSmashBrosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,19 +99,21 @@
 			isa = PBXGroup;
 			children = (
 				134E374329C253B60025F99C /* SuperSmashBrosApp.swift */,
-				134E374529C253B60025F99C /* ContentView.swift */,
-				134E374729C253B80025F99C /* Assets.xcassets */,
-				134E374929C253B80025F99C /* Preview Content */,
+				134E377529C3AB760025F99C /* Views */,
+				134E377229C398BB0025F99C /* ViewModel */,
+				134E376D29C253C20025F99C /* Models */,
+				134E374929C253B80025F99C /* Services */,
 			);
 			path = SuperSmashBros;
 			sourceTree = "<group>";
 		};
-		134E374929C253B80025F99C /* Preview Content */ = {
+		134E374929C253B80025F99C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				134E374729C253B80025F99C /* Assets.xcassets */,
 				134E374A29C253B80025F99C /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Services;
 			sourceTree = "<group>";
 		};
 		134E375329C253B80025F99C /* SuperSmashBrosTests */ = {
@@ -125,6 +131,30 @@
 				134E376029C253B80025F99C /* SuperSmashBrosUITestsLaunchTests.swift */,
 			);
 			path = SuperSmashBrosUITests;
+			sourceTree = "<group>";
+		};
+		134E376D29C253C20025F99C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				134E376E29C253E60025F99C /* CharacterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		134E377229C398BB0025F99C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				134E377329C3991D0025F99C /* SuperSmashBrosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		134E377529C3AB760025F99C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				134E374529C253B60025F99C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134E376F29C253E60025F99C /* CharacterModel.swift in Sources */,
 				134E374629C253B60025F99C /* ContentView.swift in Sources */,
+				134E377429C3991D0025F99C /* SuperSmashBrosViewModel.swift in Sources */,
 				134E374429C253B60025F99C /* SuperSmashBrosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
